@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { Nav } from "@/components/Nav";
+
+export const dynamic = "force-dynamic";
 import type { Reflection } from "@/lib/types";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { DeleteReflectionButton } from "@/components/DeleteReflectionButton";

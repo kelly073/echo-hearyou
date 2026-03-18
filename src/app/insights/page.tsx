@@ -1,5 +1,7 @@
 import { Nav } from "@/components/Nav";
 import type { Reflection } from "@/lib/types";
+
+export const dynamic = "force-dynamic";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 
 async function loadReflections(): Promise<Reflection[]> {
