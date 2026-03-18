@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-sky-50/80 text-slate-800 antialiased;
+}
+
+.mirror-shell {
+  @apply min-h-screen flex flex-col items-center px-4 py-8;
+}
+
+.mirror-card {
+  @apply w-full max-w-3xl rounded-3xl border border-sky-100 bg-white/90 shadow-lg shadow-sky-100/50 backdrop-blur-sm p-6 md:p-8;
+}
+
+.mirror-heading {
+  @apply text-2xl md:text-3xl font-semibold tracking-tight text-slate-800;
+}
+
+.mirror-subtle {
+  @apply text-sm text-slate-500;
+}
+
+.mirror-button-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-sky-500 px-4 py-2 text-sm font-medium text-white shadow-sm shadow-sky-200 transition hover:bg-sky-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-sky-50;
+}
+
+.mirror-button-ghost {
+  @apply inline-flex items-center justify-center rounded-full px-3 py-1.5 text-sm font-medium text-slate-600 hover:bg-sky-50 transition;
+}
+
+.mirror-input {
+  @apply w-full rounded-2xl border border-sky-100 bg-white px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:border-sky-300;
+}
+
+.mirror-textarea {
+  @apply w-full rounded-2xl border border-sky-100 bg-white px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:border-sky-300 resize-none;
+}
+
