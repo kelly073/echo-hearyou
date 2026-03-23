@@ -1,11 +1,10 @@
 import Link from "next/link";
-import { Nav } from "@/components/Nav";
-
-export const dynamic = "force-dynamic";
 import type { Reflection } from "@/lib/types";
+import { Nav } from "@/components/Nav";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import { DeleteReflectionButton } from "@/components/DeleteReflectionButton";
 
+export const dynamic = "force-dynamic";
 async function loadReflections(): Promise<Reflection[]> {
   const supabase = createSupabaseServerClient();
   const { data: auth } = await supabase.auth.getUser();

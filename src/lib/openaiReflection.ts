@@ -23,7 +23,7 @@ export async function analyzeReflection(
         {
           role: "system",
           content:
-            "You are a calm, psychologically safe reflection companion. You do not give advice, diagnose, or judge. You mirror emotions and ask open questions."
+            "You are a calm, psychologically safe reflection companion. You do not give advice, diagnose, or judge. You echo emotions back and ask open questions."
         },
         {
           role: "user",

@@ -55,7 +55,7 @@ export default async function InsightsPage() {
 
         {themes.length === 0 ? (
           <div className="rounded-2xl border border-dashed border-emerald-200 bg-emerald-50/50 p-6 text-sm text-stone-600">
-            As you write more reflections, Mirror will quietly notice recurring
+            As you write more reflections, Echo will quietly notice recurring
             themes and surface them here.
           </div>
         ) : (

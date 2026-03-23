@@ -1,6 +1,6 @@
-## Mirror – AI-assisted reflective journaling
+## Echo – AI-assisted reflective journaling
 
-Mirror is a calm, minimal web app for reflective writing. Instead of
+Echo is a calm, minimal web app for reflective writing. Instead of
 optimizing for content or an audience, it helps you write for yourself and
 receive gentle AI reflections back.
 
@@ -71,6 +71,6 @@ Open the URL Next prints (usually `http://localhost:3000`).
 ### Notes
 
 - **Psychological safety**: no likes, followers, or public metrics.
-- **AI as a mirror**: summarizing emotions, asking gentle questions, suggesting themes.
+- **AI as an echo**: summarizing emotions, asking gentle questions, suggesting themes.
 - **Anonymous mode**: reflections are still stored under your account for privacy and RLS, but the UI can treat them as “anonymous” via `is_anonymous`.
 

@@ -40,7 +40,7 @@ export default function LoginPage() {
         <header className="space-y-2">
           <h1 className="mirror-heading">Welcome back.</h1>
           <p className="mirror-subtle">
-            Mirror is private by default. Sign in to keep reflections securely
+            Echo is private by default. Sign in to keep reflections securely
             tied to you — even if you write anonymously inside the app.
           </p>
         </header>
