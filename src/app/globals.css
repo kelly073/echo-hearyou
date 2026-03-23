@@ -7,8 +7,7 @@
 }
 
 body {
-  @apply min-h-screen text-stone-700 antialiased;
-  background: linear-gradient(180deg, #e0f2fe 0%, #ecfdf5 50%, #fefce8 100%);
+  @apply min-h-screen bg-gradient-to-b from-sky-100 via-emerald-50 to-amber-50 text-stone-700 antialiased;
 }
 
 .mirror-shell {
@@ -16,7 +15,7 @@ body {
 }
 
 .mirror-card {
-  @apply w-full max-w-3xl rounded-3xl border border-sky-200/60 bg-white/95 shadow-lg backdrop-blur-sm p-6 md:p-8;
+  @apply w-full max-w-3xl rounded-3xl border border-sky-200 bg-white shadow-lg p-6 md:p-8;
 }
 
 .mirror-heading {
@@ -32,14 +31,13 @@ body {
 }
 
 .mirror-button-ghost {
-  @apply inline-flex items-center justify-center rounded-full px-3 py-1.5 text-sm font-medium text-stone-600 hover:bg-emerald-50/80 transition;
+  @apply inline-flex items-center justify-center rounded-full px-3 py-1.5 text-sm font-medium text-stone-600 hover:bg-emerald-50 transition;
 }
 
 .mirror-input {
-  @apply w-full rounded-2xl border border-sky-200/80 bg-white px-4 py-3 text-sm text-stone-800 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:border-sky-300;
+  @apply w-full rounded-2xl border border-sky-200 bg-white px-4 py-3 text-sm text-stone-800 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:border-sky-300;
 }
 
 .mirror-textarea {
-  @apply w-full rounded-2xl border border-sky-200/80 bg-white px-4 py-3 text-sm text-stone-800 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:border-sky-300 resize-none;
+  @apply w-full rounded-2xl border border-sky-200 bg-white px-4 py-3 text-sm text-stone-800 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:border-sky-300 resize-none;
 }
-
