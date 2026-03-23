@@ -84,11 +84,11 @@ export default function WritePage() {
 
         <section className="space-y-3">
           {isAuthed === false && (
-            <div className="rounded-2xl border border-sky-100 bg-sky-50/50 p-4 text-sm text-slate-600">
+            <div className="rounded-2xl border border-emerald-200 bg-emerald-50/50 p-4 text-sm text-stone-600">
               To save reflections privately, please{" "}
               <button
                 type="button"
-                className="text-sky-600 underline underline-offset-2"
+                className="text-sky-600 hover:text-emerald-700 underline underline-offset-2"
                 onClick={() => router.push("/login")}
               >
                 sign in
@@ -110,7 +110,7 @@ export default function WritePage() {
             onChange={(e) => setContent(e.target.value)}
           />
           <div className="flex flex-wrap items-center justify-between gap-3">
-            <div className="flex items-center gap-2 text-xs text-slate-500">
+            <div className="flex items-center gap-2 text-xs text-stone-500">
               <button
                 type="button"
                 onClick={() => setIsAnonymous((v) => !v)}
@@ -141,15 +141,15 @@ export default function WritePage() {
             </div>
           </div>
           {error && (
-            <p className="text-xs text-red-600 bg-red-50 border border-red-100 rounded-xl px-3 py-2">
+            <p className="text-xs text-red-700 bg-red-50 border border-red-200 rounded-xl px-3 py-2">
               {error}
             </p>
           )}
         </section>
 
         {reflection && (
-          <section className="mt-4 space-y-4 rounded-2xl border border-sky-100 bg-sky-50/70 px-4 py-4">
-            <h2 className="text-sm font-medium text-slate-800">
+          <section className="mt-4 space-y-4 rounded-2xl border border-emerald-200 bg-emerald-50/60 px-4 py-4">
+            <h2 className="text-sm font-medium text-stone-800">
               A gentle reflection
             </h2>
             {reflection.title && (
@@ -158,22 +158,22 @@ export default function WritePage() {
               </p>
             )}
             {reflection.ai_summary && (
-              <p className="text-sm text-slate-700">
+              <p className="text-sm text-stone-700">
                 {reflection.ai_summary}
               </p>
             )}
             {reflection.ai_questions && reflection.ai_questions.length > 0 && (
               <div className="space-y-2">
-                <p className="text-xs font-medium text-slate-500 uppercase tracking-wide">
+                <p className="text-xs font-medium text-stone-500 uppercase tracking-wide">
                   Questions to sit with
                 </p>
                 <ul className="space-y-1.5">
                   {reflection.ai_questions.map((q, i) => (
                     <li
                       key={i}
-                      className="text-sm text-slate-700 flex gap-2 items-start"
+                      className="text-sm text-stone-700 flex gap-2 items-start"
                     >
-                      <span className="mt-[5px] h-1.5 w-1.5 rounded-full bg-sky-500" />
+                      <span className="mt-[5px] h-1.5 w-1.5 rounded-full bg-amber-400" />
                       <span>{q}</span>
                     </li>
                   ))}
@@ -182,14 +182,14 @@ export default function WritePage() {
             )}
             {reflection.ai_themes && reflection.ai_themes.length > 0 && (
               <div className="space-y-2">
-                <p className="text-xs font-medium text-slate-500 uppercase tracking-wide">
+                <p className="text-xs font-medium text-stone-500 uppercase tracking-wide">
                   Themes that appear here
                 </p>
                 <div className="flex flex-wrap gap-1.5">
                   {reflection.ai_themes.map((t, i) => (
                     <span
                       key={i}
-                      className="rounded-full bg-sky-100 px-3 py-1 text-[11px] text-slate-700"
+                      className="rounded-full bg-emerald-100 px-3 py-1 text-[11px] text-emerald-800"
                     >
                       {t}
                     </span>

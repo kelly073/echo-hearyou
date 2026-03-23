@@ -54,23 +54,23 @@ export default async function InsightsPage() {
         </header>
 
         {themes.length === 0 ? (
-          <div className="rounded-2xl border border-dashed border-sky-200 bg-sky-50/50 p-6 text-sm text-slate-500">
+          <div className="rounded-2xl border border-dashed border-emerald-200 bg-emerald-50/50 p-6 text-sm text-stone-600">
             As you write more reflections, Mirror will quietly notice recurring
             themes and surface them here.
           </div>
         ) : (
           <section className="space-y-4">
-            <p className="text-xs text-slate-500">
+            <p className="text-xs text-stone-500">
               Based on {reflections.length} saved reflections.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {themes.map((t) => (
                 <div
                   key={t.label}
-                  className="rounded-2xl border border-sky-100 bg-white px-4 py-3 flex items-center justify-between shadow-sm"
+                  className="rounded-2xl border border-emerald-100 bg-white px-4 py-3 flex items-center justify-between shadow-sm"
                 >
-                  <span className="text-sm text-slate-800">{t.label}</span>
-                  <span className="text-xs text-slate-500">
+                  <span className="text-sm text-stone-800">{t.label}</span>
+                  <span className="text-xs text-stone-500">
                     {t.occurrences} reflection
                     {t.occurrences === 1 ? "" : "s"}
                   </span>

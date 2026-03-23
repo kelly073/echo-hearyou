@@ -73,12 +73,12 @@ export default function LoginPage() {
           </div>
 
           {message && (
-            <p className="text-xs text-slate-600 bg-sky-50 border border-sky-100 rounded-xl px-3 py-2">
+            <p className="text-xs text-stone-600 bg-emerald-50 border border-emerald-200 rounded-xl px-3 py-2">
               {message}
             </p>
           )}
           {error && (
-            <p className="text-xs text-red-600 bg-red-50 border border-red-100 rounded-xl px-3 py-2">
+            <p className="text-xs text-red-700 bg-red-50 border border-red-200 rounded-xl px-3 py-2">
               {error}
             </p>
           )}

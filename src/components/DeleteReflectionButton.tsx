@@ -32,7 +32,7 @@ export function DeleteReflectionButton({ id }: { id: string }) {
   return (
     <button
       type="button"
-      className="mirror-button-ghost text-[11px] px-2 py-1 hover:bg-red-50 hover:text-red-600"
+      className="mirror-button-ghost text-[11px] px-2 py-1 hover:bg-red-50 hover:text-red-700"
       onClick={onDelete}
       disabled={isDeleting}
       aria-label="Delete reflection"

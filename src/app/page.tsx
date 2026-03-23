@@ -27,9 +27,9 @@ export default function HomePage() {
           </Link>
         </section>
 
-        <section className="grid gap-4 md:grid-cols-3 pt-4 border-t border-sky-100">
+        <section className="grid gap-4 md:grid-cols-3 pt-4 border-t border-sky-200/60">
           <div className="space-y-1">
-            <h2 className="text-sm font-medium text-slate-800">
+            <h2 className="text-sm font-medium text-stone-800">
               Write for yourself
             </h2>
             <p className="mirror-subtle">
@@ -38,7 +38,7 @@ export default function HomePage() {
             </p>
           </div>
           <div className="space-y-1">
-            <h2 className="text-sm font-medium text-slate-800">
+            <h2 className="text-sm font-medium text-stone-800">
               A gentle mirror
             </h2>
             <p className="mirror-subtle">
@@ -47,7 +47,7 @@ export default function HomePage() {
             </p>
           </div>
           <div className="space-y-1">
-            <h2 className="text-sm font-medium text-slate-800">
+            <h2 className="text-sm font-medium text-stone-800">
               Anonymous by default
             </h2>
             <p className="mirror-subtle">
