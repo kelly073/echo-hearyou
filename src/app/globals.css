@@ -7,15 +7,8 @@
 }
 
 body {
-  @apply text-stone-700 antialiased;
-  background: linear-gradient(
-    to bottom,
-    #e0f2fe 0%,
-    #ecfdf5 40%,
-    #f0fdf4 70%,
-    #fefce8 100%
-  );
-  min-height: 100vh;
+  @apply min-h-screen text-stone-700 antialiased;
+  background: linear-gradient(180deg, #e0f2fe 0%, #ecfdf5 50%, #fefce8 100%);
 }
 
 .mirror-shell {
@@ -23,9 +16,7 @@ body {
 }
 
 .mirror-card {
-  @apply w-full max-w-3xl rounded-3xl border border-sky-200/60 bg-white/95 shadow-xl shadow-sky-200/30 backdrop-blur-sm p-6 md:p-8;
-  box-shadow: 0 4px 24px -4px rgba(56, 189, 248, 0.12),
-    0 4px 8px -4px rgba(34, 197, 94, 0.08);
+  @apply w-full max-w-3xl rounded-3xl border border-sky-200/60 bg-white/95 shadow-lg backdrop-blur-sm p-6 md:p-8;
 }
 
 .mirror-heading {
@@ -37,7 +28,7 @@ body {
 }
 
 .mirror-button-primary {
-  @apply inline-flex items-center justify-center rounded-full bg-sky-500 px-4 py-2 text-sm font-medium text-white shadow-md shadow-sky-300/40 transition hover:bg-sky-600 hover:shadow-sky-400/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-sky-50;
+  @apply inline-flex items-center justify-center rounded-full bg-sky-500 px-4 py-2 text-sm font-medium text-white shadow-md transition hover:bg-sky-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-sky-50;
 }
 
 .mirror-button-ghost {
